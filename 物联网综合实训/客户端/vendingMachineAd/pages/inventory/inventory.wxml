@@ -1,0 +1,15 @@
+<view wx:for="{{drinkList}}" wx:key="{{index}}" wx:for-index="i">
+  <van-card 
+    desc="现存数量：{{item.nowNum}}" 
+    title="商品：{{item.drinkName}}"
+    >
+    <view slot="footer">
+      <van-button size="small" bindtap='addNum' data-index="{{item.id}}">补货</van-button>
+      <van-button size="small" bindtap='deleteDrink' data-index="{{item.id}}">下架</van-button>
+    </view>
+  </van-card>
+  <van-divider />
+</view>
+
+<van-toast id="van-toast" />
+<van-dialog id="van-dialog" />

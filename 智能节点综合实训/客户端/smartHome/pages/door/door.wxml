@@ -1,0 +1,18 @@
+<view wx:for="{{doorList}}" wx:key="{{index}}" wx:for-index="i">
+  <van-card
+    currency=" "
+    tag="{{item.state}}"
+    desc="上次关门时间：{{item.operateTime}}"
+    title="设备：{{item.equipment}}"
+    thumb="{{ item.img }}"
+    price="当前状态：{{item.isopen}}"
+  >
+    <view slot="footer">
+      <van-button size="small " bindtap='openDoor' data-index="{{item.id}}">打开</van-button>
+      <van-button size="small " bindtap='closeDoor' data-index="{{item.id}}">关闭</van-button>
+    </view>
+  </van-card>
+</view>
+
+<van-toast id="van-toast"/>
+

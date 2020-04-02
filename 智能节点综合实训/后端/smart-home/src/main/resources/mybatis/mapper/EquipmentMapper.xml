@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yl.smarthome.mapper.EquipmentMapper">
+
+    <select id="getEquipmentByCategory" resultType="com.yl.smarthome.bean.Equipment">
+        SELECT * FROM equipment WHERE category=#{categoty}
+    </select>
+
+    <select id="getStateById" resultType="String">
+        SELECT state FROM equipment  WHERE id=#{id}
+    </select>
+
+    <update id="openEquipmentById">
+        UPDATE  equipment SET isopen="开启",operateTime=#{time} WHERE id=#{id}
+    </update>
+    <update id="closeEquipmentById">
+        UPDATE  equipment SET isopen="关闭",operateTime=#{time} WHERE id=#{id}
+    </update>
+
+    <select id="getCardByOpenid" resultType="String">
+        SELECT doorCard FROM user WHERE openid=#{openid}
+    </select>
+
+    <select id="getEquipmentByid" resultType="String">
+        SELECT equipment FROM equipment WHERE id=#{id}
+    </select>
+
+    <insert id="insertRecord">
+        INSERT INTO history VALUES (#{card},#{equipment},#{operation},#{time})
+    </insert>
+
+    <select id="getCardCountByOpenid" resultType="int">
+        SELECT count(*) FROM doorCard WHERE doorCard=(SELECT doorCard FROM user WHERE openid=#{openid})
+    </select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+
+<view wx:if="{{status=='正在售卖'}}">
+<van-notice-bar
+  text="当前状态：{{status}}❤❤❤冷饮温度：{{coldTemperature}}℃❤❤❤热饮温度：{{hotTemperature}}℃"
+/>
+  <view wx:for="{{drinkList}}" wx:key="{{index}}" wx:for-index="i">
+    <van-card tag="{{item.temperature}}" desc="现存数量：{{item.nowNum}}" title="{{item.drinkName}}" thumb="{{ item.img }}" price="价格：{{item.price}}">
+      <view slot="footer">
+        <van-button size="small " bindtap='buyDrink' data-drinkName="{{item.drinkName}}" data-price="{{item.price}}" data-nowNum="{{item.nowNum}}" data-index="{{item.id}}">购买</van-button>
+      </view>
+    </van-card>
+    <van-divider />
+  </view>
+</view>
+<view wx:else>
+  <van-notice-bar
+  text="停止售卖"
+/>
+</view>
+<van-toast id="van-toast" />
+<van-dialog id="van-dialog" />

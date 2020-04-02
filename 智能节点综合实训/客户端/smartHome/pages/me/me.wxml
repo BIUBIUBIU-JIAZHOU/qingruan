@@ -1,0 +1,59 @@
+<view class="wrap_me">
+  <!--上 大盒子-->
+  <view class="wrap_box">
+    <view class="wrap_b_o">
+      <icon class="iconfont icon-shezhicopy"></icon>
+      <icon class="iconfont icon-xinxi"></icon>
+    </view>
+    <view  class='avatarInfo'>
+      <open-data class='avatar' type='userAvatarUrl'></open-data>
+      <open-data class='name' type='userNickName'></open-data>
+      <!-- <image class='downArrow' src='/img/down.png'></image> -->
+    </view>
+    <!-- <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+    <text class="userinfo-nickname">门禁卡：{{card}}</text>
+  </view>
+</view>
+<view class="wrap_bottom">
+
+  <!--结束-->
+  <view class="wrap_bottom_bot" bindtap="navigateToMeInfo">
+    <!--下 优惠券 退款售后-->
+    <view class="wrap_bottom_left">
+      <icon class="iconfont icon-youhuiquan1"></icon>
+      <text>个人信息</text>
+    </view>
+    <view>
+      <icon class="iconfont icon-icon"></icon>
+    </view>
+  </view>
+  <view class="wrap_bottom_bot" bindtap="navigateToMember">
+    <view class="wrap_bottom_left">
+      <icon class="iconfont icon-shoucang"></icon>
+      <text>家庭成员</text>
+    </view>
+    <view>
+      <icon class="iconfont icon-icon"></icon>
+    </view>
+  </view>
+  <view class="wrap_bottom_bot" bindtap="navigateToHistory">
+    <view class="wrap_bottom_left">
+      <icon class="iconfont icon-lishiliulan"></icon>
+      <text>操作记录</text>
+    </view>
+    <view>
+      <icon class="iconfont icon-icon"></icon>
+    </view>
+  </view>
+  <view class="wrap_bottom_bot" bindtap="navigateToCard">
+    <view class="wrap_bottom_left">
+      <icon class="iconfont icon-daipingjia"></icon>
+      <text>绑定门禁卡</text>
+    </view>
+    <view>
+      <icon class="iconfont icon-icon"></icon>
+    </view>
+  </view>
+</view>
+<!--下 优惠券 退款售后-->

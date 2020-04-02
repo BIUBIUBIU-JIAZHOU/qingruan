@@ -1,0 +1,16 @@
+<view wx:for="{{memberList}}" wx:key="{{index}}" wx:for-index="i">
+  <van-card tag="" desc="上级：{{item.obey}}" title="职位：{{item.position}}" thumb="{{ item.img }}">
+    <view slot="footer">
+      <van-button size="small" bindtap='deleteMember' data-index="{{item.doorCard}}">删除</van-button>
+    </view>
+  </van-card>
+  <van-divider />
+</view>
+
+<view class="address-add cu-button">
+  <van-button type="primary" size="large" bindtap='navigateToAddMem'>添加新成员</van-button>
+
+</view>
+
+<van-toast id="van-toast" />
+<van-dialog id="van-dialog" />

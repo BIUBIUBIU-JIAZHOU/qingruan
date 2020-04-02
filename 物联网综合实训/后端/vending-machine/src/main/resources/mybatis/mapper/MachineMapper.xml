@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yl.vendingmachine.mapper.MachineMapper">
+
+    <select id="getMachine" resultType="com.yl.vendingmachine.bean.Machine">
+        SELECT * FROM vendingMachine
+    </select>
+
+    <update id="opendMachine">
+        UPDATE  vendingMachine SET status=1
+    </update>
+
+    <update id="closeMachine">
+        UPDATE  vendingMachine SET status=0
+    </update>
+
+    <update id="changeCold">
+        UPDATE  vendingMachine SET coldTemperature=#{coldTemperature}
+    </update>
+
+    <update id="changeHot">
+        UPDATE  vendingMachine SET hotTemperature=#{hotTemperature}
+    </update>
+
+    <update id="addDrinkById">
+        UPDATE  drink SET nowNum=nowNum+#{addNum} WHERE id=#{id}
+    </update>
+
+    <insert id="insertControlRecord">
+        INSERT INTO controlHistory  VALUES (#{openid},#{controlKind},#{parameter},#{category},#{time})
+    </insert>
+
+    <select id="getDrinkNameById" resultType="String">
+        SELECT drinkName FROM drink WHERE id=#{id}
+    </select>
+
+    <delete id="deleteDrinkById">
+        DELETE FROM drink WHERE id=#{id}
+    </delete>
+
+    <select id="getControlHistoryByOpenid" resultType="com.yl.vendingmachine.bean.ControlRecord">
+        SELECT * FROM controlHistory WHERE openid=#{openid}
+    </select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

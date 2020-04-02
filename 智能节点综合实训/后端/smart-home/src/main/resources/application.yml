@@ -1,0 +1,19 @@
+spring:
+  datasource:
+#   数据源基本配置
+    username: 
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: 
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+server:
+  port: 443
+  ssl:
+    key-store: 
+    key-password: 
+    key-store-type: 
+
+
+

@@ -1,0 +1,18 @@
+<!--pages/machineStatus/machineStatus.wxml-->
+<view class="margin-left">
+  当前状态：{{status}}
+  <van-button size="small" type="primary" bindtap='changeStatus'>{{reserveStatus}}</van-button>
+</view>
+<view class="margin-top">
+  当前冷饮温度：{{coldTemperature}}℃
+  <van-stepper min="-3" max=" 3" value="{{ coldTemperature }}" bind:change="adjustCold" />
+  <van-button size="small" type="primary" bindtap='sendCold'>设置冷饮温度</van-button>
+</view>
+<view class="margin-top">
+  当前热饮温度：{{hotTemperature}}℃
+  <van-stepper min="30" max=" 45" value="{{ hotTemperature }}" bind:change="adjustHot" />
+  <van-button size="small" type="primary" bindtap='sendHot'>设置热饮温度</van-button>
+</view>
+
+
+<van-toast id="van-toast" />

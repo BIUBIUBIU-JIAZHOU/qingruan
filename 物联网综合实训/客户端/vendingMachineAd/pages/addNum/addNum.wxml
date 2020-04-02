@@ -1,0 +1,13 @@
+<van-cell-group>
+  <van-field
+    placeholder="请输入商品数量"
+    border="{{ false }}"
+    bind:change="onChange"
+    type="number"
+  />
+</van-cell-group>
+
+<view class="cu-button">
+  <van-button size="small" type="primary" bindtap='addNum'>添加</van-button>
+</view>
+<van-toast id="van-toast" />

@@ -1,0 +1,11 @@
+<view class="margin-top" >
+  <van-row>
+    <van-col span="7" offset="3">
+      <van-button round type="info" bindtap='navigateToStatus' size="normal">状态控制</van-button>
+    </van-col>
+    <van-col span="10" offset="4">
+      <van-button round type="info" bindtap='navigateToInventory' size="normal">库存控制</van-button>
+    </van-col>
+  </van-row>
+</view>
+

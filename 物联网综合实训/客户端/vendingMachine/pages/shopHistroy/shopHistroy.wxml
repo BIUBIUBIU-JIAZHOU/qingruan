@@ -1,0 +1,11 @@
+<view wx:for="{{recordList}}" wx:key="{{index}}" wx:for-index="i">
+  <van-card
+    desc="购买时间：{{item.time}}"
+    title="购买产品：{{item.drinkName}}"
+    price="价格：{{item.spend}}"
+  >
+  </van-card>
+  <van-divider />
+</view>
+
+

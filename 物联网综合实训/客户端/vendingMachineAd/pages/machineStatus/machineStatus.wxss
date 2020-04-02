@@ -1,0 +1,8 @@
+.margin-left {
+  margin-left: 125rpx;
+}
+
+.margin-top {
+  margin-top: 150rpx;
+  margin-left: 225rpx;
+}

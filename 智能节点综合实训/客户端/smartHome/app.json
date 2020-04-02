@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/setting/setting",
+    "pages/systeminfo/systeminfo",
+    "pages/me/me",
+    "pages/control/control",
+    "pages/door/door",
+    "pages/lamp/lamp",
+    "pages/curtain/curtain",
+    "pages/airCond/airCond",
+    "pages/meInfo/meInfo",
+    "pages/member/member",
+    "pages/history/history",
+    "pages/addDoorCard/addDoorCard",
+    "pages/addMember/addMember"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#40a7e7",
+    "navigationBarTitleText": "smartHome",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "定位以获取当前位置天气信息"
+    }
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/home.jpg",
+        "selectedIconPath": "img/home.jpg"
+      },
+      {
+        "pagePath": "pages/control/control",
+        "text": "控制",
+        "iconPath": "img/category.png",
+        "selectedIconPath": "img/category.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "img/我的.png",
+        "selectedIconPath": "img/我的.png"
+      }
+    ]
+  }
+}

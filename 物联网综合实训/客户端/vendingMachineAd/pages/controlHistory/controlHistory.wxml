@@ -1,0 +1,17 @@
+<view wx:for="{{recordList}}" wx:key="{{index}}" wx:for-index="i">
+  <view wx:if="{{item.category==1}}">
+    <van-card currency=' ' desc="操作时间：{{item.time}}" price="操作：{{item.controlKind}}{{item.parameter}}">
+    </van-card>
+    <van-divider />
+  </view>
+  <view wx:elif="{{item.category==2}}">
+    <van-card currency=' ' desc="操作时间：{{item.time}}" price="操作：{{item.controlKind}}{{item.parameter}}瓶">
+    </van-card>
+    <van-divider />
+  </view>
+  <view wx:else>
+    <van-card currency=' ' desc="操作时间：{{item.time}}" price="操作：{{item.controlKind}}{{item.parameter}}℃">
+    </van-card>
+    <van-divider />
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view>
+  <view class="cu-form-groupc margin-top">
+    <view class="title">门禁卡</view>
+    <input  maxlength="10" bindblur="cardConfirm"></input>
+  </view>
+
+  <view class="cu-form-groupc ">
+    <view class="title">上级</view>
+    <input  maxlength="20" bindblur="obeyConfirm"></input>
+  </view>
+
+  <view class="cu-form-groupc">
+    <view class="title">职位</view>
+    <picker bindchange="PickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+  </view>
+
+  
+</view>
+
+<view class="cu-button">
+  <van-button type="primary" bindtap='sendEPC'>添加</van-button>
+</view>
+
+<van-toast id="van-toast"/>

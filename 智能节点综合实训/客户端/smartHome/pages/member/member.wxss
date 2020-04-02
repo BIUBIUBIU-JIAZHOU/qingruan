@@ -1,0 +1,9 @@
+.address-add{
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+
+.cu-button{
+  padding: 20rpx 20rpx 20rpx 20rpx
+}

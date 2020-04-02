@@ -1,0 +1,140 @@
+/* pages/di/me/me.wxss */
+@import "/font/iconfont.wxss";
+
+.avatarInfo {
+  display: flex;
+  align-items: center;
+  padding: 0 200rpx;
+}
+.avatarInfo .avatar {
+  display: block;
+  overflow: hidden;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.avatarInfo .name {
+  padding: 0 20rpx;
+  font-size: 30rpx;
+}
+.avatarInfo .downArrow {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.wrap_me {
+	width: 100vw;
+	height: 35vh;
+	background: rgb(4, 153, 223);
+	display: flex;
+}
+
+.wrap_box {
+	width: 90vw;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrap_box image {
+	width: 130rpx;
+	height: 130rpx;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	margin: 0 0 0 40%;
+}
+
+.wrap_box text {
+	display: flex;
+	justify-content: center;
+	margin: 20rpx 0 0 0;
+	color: #fff;
+	font-size: 35rpx;
+}
+
+.wrap_b_o icon {
+	color: #fff;
+	font-size: 40rpx;
+}
+
+.wrap_b_o {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrap_bottom {
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrap_bottom_top {
+	height: 120rpx;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1rpx solid #ccc;
+	align-items: center;
+}
+
+.bottom_left icon {
+	color: rgb(90, 160, 225);
+}
+
+.bottom_left text {
+	margin: 0 0 0 20rpx;
+	font-size: 30rpx;
+}
+
+.bottom_right text {
+	margin: 0 20rpx 0 0;
+	font-size: 30rpx;
+}
+
+.wrap_bottom_zhong {
+	display: flex;
+	height: 140rpx;
+	justify-content: space-between;
+	border-bottom: 1rpx solid #ccc;
+	margin: 10rpx 0 0 0;
+}
+
+.wrap_bottom_ye {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrap_bottom_ye text {
+	margin: 10rpx 0 0 0;
+	font-size: 30rpx;
+	color: rgb(156, 156, 156);
+}
+
+.wrap_bottom_bot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100rpx;
+	border-bottom: 1px solid #ccc;
+}
+
+.wrap_bottom_bot icon {
+	font-size: 40rpx;
+	color:#ccc;
+}
+.wrap_bottom_left{
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+}
+.wrap_bottom_left text {
+	font-size: 30rpx;
+	margin: 0 0 0 20rpx;
+	color: rgb(136, 136, 136);
+	align-items: center;
+}

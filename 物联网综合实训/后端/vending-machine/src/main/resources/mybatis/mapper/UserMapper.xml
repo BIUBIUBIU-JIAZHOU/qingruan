@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yl.vendingmachine.mapper.UserMapper">
+    <insert id="insertUserByOpenid">
+        INSERT INTO user  VALUES (#{openid},#{createTime},#{balance})
+    </insert>
+
+    <select id="getUserCountByOpenid" resultType="int">
+        SELECT count(*) FROM user WHERE openid=#{openid}
+    </select>
+
+    <insert id="insertUserByOpenid">
+        INSERT INTO administrator  VALUES (#{openid},#{createTime})
+    </insert>
+
+    <select id="getAdCountByOpenid" resultType="int">
+        SELECT count(*) FROM administrator WHERE openid=#{openid}
+    </select>
+
+    <select id="getUserByOpenid" resultType="com.yl.vendingmachine.bean.User">
+        SELECT * FROM user WHERE openid=#{openid}
+    </select>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

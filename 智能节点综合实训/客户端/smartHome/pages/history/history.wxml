@@ -1,0 +1,12 @@
+<view wx:for="{{recordList}}" wx:key="{{index}}" wx:for-index="i">
+  <van-card
+    currency=" "
+    desc="操作时间：{{item.time}}"
+    title="操作员：{{item.position}}"
+    price="操作：{{item.operation}}{{item.equipment}}"
+  >
+  </van-card>
+  <van-divider />
+</view>
+
+

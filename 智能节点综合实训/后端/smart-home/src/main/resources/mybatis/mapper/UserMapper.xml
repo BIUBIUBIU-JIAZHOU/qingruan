@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yl.smarthome.mapper.UserMapper">
+    <insert id="insertMember">
+        INSERT INTO user (createTime,obey,level,position,doorCard,img) VALUES (#{createTime},#{obey},#{level},#{position},#{doorCard},#{img})
+    </insert>
+
+    <select id="getCountByCard" resultType="int">
+        SELECT count(*) FROM user WHERE doorCard=#{doorCard}
+    </select>
+
+    <update id="updateUser">
+        UPDATE  user SET openid=#{openid} WHERE doorCard=#{doorCard}
+    </update>
+
+    <select id="getMyInfoByOpenid" resultType="com.yl.smarthome.bean.User">
+        SELECT * FROM user WHERE openid=#{openid}
+    </select>
+
+    <select id="getMember" resultType="com.yl.smarthome.bean.User">
+        SELECT * FROM user
+    </select>
+
+    <select id="getCardByOpenid" resultType="String">
+        SELECT doorCard FROM user WHERE openid=#{openid}
+    </select>
+
+    <delete id="deleteMember">
+        DELETE FROM user WHERE doorCard=#{card}
+    </delete>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+<view >
+  <view class="cu-form-groupc ">
+    <view class="title">门禁卡</view>
+    <input  maxlength="20" bindblur="cardConfirm"></input>
+  </view>
+</view>
+
+<view class="cu-button">
+  <van-button type="primary" bindtap='sendCard'>绑定</van-button>
+</view>
+
+<van-toast id="van-toast"/>
